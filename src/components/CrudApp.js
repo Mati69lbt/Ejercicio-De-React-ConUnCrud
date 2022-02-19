@@ -6,28 +6,43 @@ import CrudTable from "./CrudTable";
 const initialDb = [
   {
     id: 1,
-    club: "Boca Juniors",
-    entrenador: "Sebastián Battaglia",
+    club: "Boca Juniors",    
+    nombre: "Sebestian",
+    apellido: "Battaglia",
+    edad: "41 años",
+    nacimiento: "Santa Fe",
   },
   {
     id: 2,
-    club: "River Plate",
-    entrenador: "Marcelo Gallardo",
+    club: "River Plate",    
+    nombre: "Marcelo",
+    apellido: "Gallardo",
+    edad: "46 años",
+    nacimiento: "Merlo, BsAs",
   },
   {
     id: 3,
-    club: "Racing Club",
-    entrenador: "Fernando Gago",
+    club: "Racing Club",    
+    nombre: "Fernando",
+    apellido: "Gago",
+    edad: "35 años",
+    nacimiento: "Ciudadela, BsAs",
   },
   {
     id: 4,
-    club: "Independiente",
-    entrenador: "Eduardo Dominguez",
+    club: "Independiente",    
+    nombre: "Eduardo",
+    apellido: "Dominguez",
+    edad: "43 años",
+    nacimiento: "CABA",
   },
   {
     id: 5,
-    club: "San Lorenzo",
-    entrenador: "Pedro Troglio",
+    club: "San Lorenzo",    
+    nombre: "Pedro",
+    apellido: "Troglio",
+    edad: "54 años",
+    nacimiento: "Lujan, Bsas",
   },
 ];
 
@@ -61,7 +76,8 @@ const CrudApp = () => {
 
   return (
     <div>
-      <h2>CRUD App</h2>
+      <h2>CRUD App - Entrenadores de 1ra División, AFA</h2>
+
       <article className="grid-1-2">
       <CrudForm
         createData={createData} // se ejecutara internamente cuando crearemos el formulario

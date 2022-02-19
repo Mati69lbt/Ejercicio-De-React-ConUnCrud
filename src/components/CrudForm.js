@@ -3,7 +3,10 @@ import React, { useState, useEffect } from "react";
 const initialForm = {
   id: null,
   club: "",
-  entrenador: "",
+  nombre: "",
+  apellido: "",
+  edad: "",
+  nacimiento: "",
 };
 
 const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
@@ -25,7 +28,7 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
   };
   const handleSubmit = (e) => {
     e.preventDefault(); // Para que no se autoprocese el formulario
-    if (!form.club || !form.entrenador) {
+    if (!form.club || !form.apellido) {
       alert("Datos Incompletos");
       return;
     } // no puedo enviar la tabla vacia
@@ -55,10 +58,31 @@ const CrudForm = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
         />
         <input
           type="text"
-          name="entrenador"
-          placeholder="Entrenador"
+          name="nombre"
+          placeholder="Nombre"
           onChange={handleChange}
-          value={form.entrenador}
+          value={form.nombre}
+        />
+        <input
+          type="text"
+          name="apellido"
+          placeholder="Apellido"
+          onChange={handleChange}
+          value={form.apellido}
+        />
+        <input
+          type="text"
+          name="edad"
+          placeholder="Edad"
+          onChange={handleChange}
+          value={form.edad}
+        />
+         <input
+          type="text"
+          name="nacimiento"
+          placeholder="Lugar de Nacimiento"
+          onChange={handleChange}
+          value={form.nacimiento}
         />
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar" onClick={handleReset} />
