@@ -2,6 +2,6 @@
 
 Pequeño proyecto con practicas de formulario y tablas.
 
-![imagenText](src\cap.jpeg)
+![imagenText](src\cap.png)
 
 ### `Gracias JM!`
